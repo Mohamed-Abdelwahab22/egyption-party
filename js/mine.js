@@ -93,6 +93,11 @@ $(".fa-bars").click(function(){
 })
 
 $(document).ready(function(){
+
+    $("#loading , .spinner" ).fadeOut(1000 , function(){
+        $("#loading").addClass("d-none")
+    })
+
     listWidth = $(".list-unstyled").outerWidth()
 
     $(".sideBar").animate({left : -listWidth} , 0)
